@@ -1,0 +1,80 @@
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	.all{
+		width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.battlefield{
+		width: 310px;
+		height: 310px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.score{
+		width: 310px;
+	}
+	.ships{
+		margin-top: 5px;
+		width: 310px;
+	}
+	.firstShips{
+		width: 150px;
+		float: left;
+	}
+	.lastShips{
+		width: 150px;
+		float: right;
+	}
+}
+ 
+@media only screen and (min-width : 480px) and (max-width : 1024px) {
+	.all{
+		width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.battlefield{
+		width: 470px;
+		height: 470px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.score{
+		width: 200px;
+		float: left;
+	}
+	.ships{
+		width: 260px;
+		float: right;
+	}
+	.firstShips{
+		width: 130px;
+		float: left;
+	}
+	.lastShips{
+		width: 130px;
+		float: right;
+	}
+}
+
+@media only screen and (min-width : 1024px) {
+	.all{
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.battlefield{
+		float: right;
+		width: 500px;
+		height: 500px;
+		margin: 5px;
+	}
+	.score{
+		width: 300px;
+		margin-bottom: 10px;
+	}
+	.ships{
+		width: 400px;
+	}
+}

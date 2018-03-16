@@ -1,0 +1,24 @@
+<div>
+	<table cellpadding="0px" cellspacing="0px"
+	class="battlefield"
+	style="border: 5px solid orange">
+		<tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9]" 
+		height="10%">
+			<td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9]" 
+			(click)="handleClick(i, j)"
+			width="10%" 
+			style="border: 1px solid grey; text-align: center;">
+
+				<img *ngIf=" this.field[i][j].state == 'hit' " 
+				src="assets/Hit small.png" 
+				width="85%" />
+
+				<img *ngIf=" this.field[i][j].state == 'miss' " 
+				src="assets/Miss small.png" 
+				width="85%" />
+				
+			</td>
+		</tr>
+	</table>
+</div>
+

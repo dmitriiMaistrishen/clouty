@@ -1,0 +1,23 @@
+<div class="ships">
+	<div class="firstShips">
+		<div *ngFor="let ship of dataService.data.slice(0,3)">
+			<img [src]="'assets/' + ship.ship + '.png'" 
+			width="50%">
+
+			<img *ngFor="let position of ship.positions" 
+			[src]="position.hitted ? 'assets/Hit small.png' : 'assets/Miss small.png'"
+			width="5%"/>
+		</div>
+	</div>
+
+	<div class="lastShips">
+		<div *ngFor="let ship of dataService.data.slice(3)">
+			<img [src]="'assets/' + ship.ship + '.png'" 
+			width="50%">
+
+			<img *ngFor="let position of ship.positions" 
+			[src]="position.hitted ? 'assets/Hit small.png' : 'assets/Miss small.png'"
+			width="5%"/>
+		</div>
+	</div>
+</div>
